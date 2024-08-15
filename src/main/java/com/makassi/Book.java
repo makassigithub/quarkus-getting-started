@@ -3,14 +3,14 @@ package com.makassi;
 public class Book {
     public int id;
     public String title;
-    public String Autor;
+    public String author;
     public int yearOfPublication;
     public String genre;
 
-    public Book(int id, String title, String autor, int yearOfPublication, String genre) {
+    public Book(int id, String title, String author, int yearOfPublication, String genre) {
         this.id = id;
         this.title = title;
-        Autor = autor;
+        this.author = author;
         this.yearOfPublication = yearOfPublication;
         this.genre = genre;
     }
