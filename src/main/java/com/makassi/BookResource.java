@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jboss.logging.Logger;
-import org.jboss.logging.annotations.Param;
-
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -24,7 +22,6 @@ public class BookResource {
     Logger logger;
 
     @GET
-    // @Produces(MediaType.TEXT_PLAIN)
     public List<Book> getAllBooks() {
         logger.info("getAllBooks()");
         return bookRepository.getAllBooks();
